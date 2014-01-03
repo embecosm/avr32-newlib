@@ -1,0 +1,6 @@
+2013-12-31  Jeremy Bennett  <jeremy.bennett@embecosm.com>
+
+	AVR32 patch 10-newlib-avr32-atmel-version
+
+	* newlib/acinclude.m4: Patches for AVR32.
+
