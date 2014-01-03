@@ -29,7 +29,14 @@ $(CRT0): $(sys_dir)/$(CRT0)
 
 $(sys_dir)/$(CRT0): ; @true
 
-CLEANFILES = $(CRT0)
+crtfv.o: $(sys_dir)/crtfv.o
+	rm -f $@
+	ln $(sys_dir)/crtfv.o $@ >/dev/null 2>/dev/null \
+	 || cp $(sys_dir)/crtfv.o $@
+
+$(sys_dir)/crtfv.o: ; @true
+
+CLEANFILES = $(CRT0) crtfv.o
 
 doc:
 

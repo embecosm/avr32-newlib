@@ -1,5 +1,13 @@
 2013-12-31  Jeremy Bennett  <jeremy.bennett@embecosm.com>
 
+	AVR32 patch 31-newlib-avr32-flashvault
+
+	* newlib/libc/sys/Makefile.am: Patches for AVR32.
+	* newlib/libc/sys/avr32/Makefile.am: Patches for AVR32.
+	* newlib/libc/sys/avr32/crtfv.S: Patches for AVR32.
+
+2013-12-31  Jeremy Bennett  <jeremy.bennett@embecosm.com>
+
 	AVR32 patch 30-newlib-avr32
 
 	* COPYING.LIBGLOSS: Patches for AVR32.
