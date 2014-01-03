@@ -6,6 +6,10 @@
 #else  /* !__rtems__ */
 #if defined(__arm__) || defined(__thumb__)
 #define _CLOCKS_PER_SEC_ 100
+#else
+#if defined(__AVR32__)
+#define _CLOCKS_PER_SEC_ 1000000
+#endif
 #endif
 #endif /* !__rtems__ */
 

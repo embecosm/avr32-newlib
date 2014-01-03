@@ -76,7 +76,7 @@ case "${target_optspace}:${host}" in
   yes:*)
     newlib_cflags="${newlib_cflags} -Os"
     ;;
-  :m32r-* | :d10v-* | :d30v-* | :avr-* | :m32c-* )
+  :m32r-* | :d10v-* | :d30v-* | :avr-* | :avr32-* | :m32c-* )
     newlib_cflags="${newlib_cflags} -Os"
     ;;
   no:* | :*)
@@ -99,6 +99,10 @@ case "${host_cpu}" in
   arm)
 	machine_dir=arm
 	;;
+  avr32*)
+        machine_dir=avr32        
+	newlib_cflags="${newlib_cflags} -DPREFER_SIZE_OVER_SPEED -ffunction-sections -fdata-sections"
+    ;;
   avr*)
 	newlib_cflags="${newlib_cflags} -DPREFER_SIZE_OVER_SPEED -mcall-prologues"
 	;;
@@ -358,6 +362,9 @@ case "${host}" in
   crx*)
 	sys_dir=
 	;;
+  avr32-*-*)
+	sys_dir=avr32 
+	;;
   d10v*)
 	sys_dir=d10v
 	;;
@@ -563,6 +570,10 @@ case "${host}" in
 	;;
   arc*)
 	newlib_cflags="${newlib_cflags} -DREENTRANT_SYSCALLS_PROVIDED"
+	;;
+  avr32*)
+	syscall_dir=syscalls	
+	newlib_cflags="${newlib_cflags} -DHAVE_SYSTEM -DSMALL_MEMORY -DHAVE_GETTIMEOFDAY"
 	;;
   avr*)
 	newlib_cflags="${newlib_cflags} -DNO_EXEC -DSMALL_MEMORY -DMISSING_SYSCALL_NAMES"

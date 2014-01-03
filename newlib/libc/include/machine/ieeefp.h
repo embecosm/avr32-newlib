@@ -271,6 +271,10 @@
 #define _DOUBLE_IS_32BITS
 #endif
 
+#ifdef __AVR32__
+#define __IEEE_BIG_ENDIAN
+#endif
+
 #if defined(__or32__) || defined(__or1k__) || defined(__or16__)
 #define __IEEE_BIG_ENDIAN
 #endif

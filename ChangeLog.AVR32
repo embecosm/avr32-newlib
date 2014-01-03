@@ -1,5 +1,30 @@
 2013-12-31  Jeremy Bennett  <jeremy.bennett@embecosm.com>
 
+	AVR32 patch 30-newlib-avr32
+
+	* COPYING.LIBGLOSS: Patches for AVR32.
+	* COPYING.NEWLIB: Patches for AVR32.
+	* newlib/configure.host: Patches for AVR32.
+	* newlib/libc/include/machine/ieeefp.h: Patches for AVR32.
+	* newlib/libc/include/machine/setjmp.h: Patches for AVR32.
+	* newlib/libc/include/machine/time.h: Patches for AVR32.
+	* newlib/libc/machine/avr32/Makefile.am: Patches for AVR32.
+	* newlib/libc/machine/avr32/configure.in: Patches for AVR32.
+	* newlib/libc/machine/avr32/memcpy.S: Patches for AVR32.
+	* newlib/libc/machine/avr32/strcmp.S: Patches for AVR32.
+	* newlib/libc/machine/avr32/strncpy.S: Patches for AVR32.
+	* newlib/libc/machine/configure.in: Patches for AVR32.
+	* newlib/libc/sys/avr32/Makefile.am: Patches for AVR32.
+	* newlib/libc/sys/avr32/configure.in: Patches for AVR32.
+	* newlib/libc/sys/avr32/crt0.S: Patches for AVR32.
+	* newlib/libc/sys/avr32/setjmp.S: Patches for AVR32.
+	* newlib/libc/sys/avr32/sys/sysregs.h: Patches for AVR32.
+	* newlib/libc/sys/avr32/syscalls.c: Patches for AVR32.
+	* newlib/libc/sys/avr32/syscalls.h: Patches for AVR32.
+	* newlib/libc/sys/configure.in: Patches for AVR32.
+
+2013-12-31  Jeremy Bennett  <jeremy.bennett@embecosm.com>
+
 	AVR32 patch 10-newlib-avr32-atmel-version
 
 	* newlib/acinclude.m4: Patches for AVR32.

@@ -13,6 +13,14 @@ _BEGIN_STD_C
 #define _JBLEN 24
 #endif
 
+#if defined(__AVR32__)
+/*
+  r0-r7, lr, sp
+ */
+#define _JBLEN 10
+#endif
+
+
 #ifdef __sparc__
 /*
  * onsstack,sigmask,sp,pc,npc,psr,g1,o0,wbcnt (sigcontext).
