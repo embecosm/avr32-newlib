@@ -1,0 +1,14 @@
+2014-01-03  Jeremy Bennett  <jeremy.bennett@embecosm.com>
+
+	* libc/machine/Makefile.in: Regenerated for AVR32.
+	* libc/machine/aclocal.m4: Likewise.
+	* libc/machine/avr32/Makefile.in: Likewise.
+	* libc/machine/avr32/aclocal.m4: Likewise.
+	* libc/machine/avr32/configure: Likewise.
+	* libc/machine/configure: Likewise.
+	* libc/sys/Makefile.in: Likewise.
+	* libc/sys/aclocal.m4: Likewise.
+	* libc/sys/avr32/Makefile.in: Likewise.
+	* libc/sys/avr32/aclocal.m4: Likewise.
+	* libc/sys/avr32/configure: Likewise.
+	* libc/sys/configure: Likewise.
